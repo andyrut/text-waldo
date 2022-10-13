@@ -1,0 +1,17 @@
+﻿@model TextWaldoCore.Models.Home.IndexModel
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>Text-Only Waldo</h1>
+    <p class="lead">Find Waldo below.</p>
+</div>
+
+<ul>
+    @foreach (var item in Model.Items)
+    {
+        <li>@Html.ActionLink(item, string.Equals(item, "Waldo") ? "Yes" : "No", "Home")</li>
+    }
+</ul>

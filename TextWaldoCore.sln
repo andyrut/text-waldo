@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWaldoCore", "TextWaldoCore\TextWaldoCore.csproj", "{546A5425-BD8A-47A8-916D-BBCE8CE3518C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{546A5425-BD8A-47A8-916D-BBCE8CE3518C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{546A5425-BD8A-47A8-916D-BBCE8CE3518C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{546A5425-BD8A-47A8-916D-BBCE8CE3518C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{546A5425-BD8A-47A8-916D-BBCE8CE3518C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5C70181-B8E3-4097-B424-3375A458B2EA}
+	EndGlobalSection
+EndGlobal
