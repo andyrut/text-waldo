@@ -21,13 +21,21 @@ namespace TextWaldoCore.Controllers
 
         public IActionResult Index()
         {
-            var model = new IndexModel
+            try
             {
-                Items = System.IO.File.ReadAllText(Path.Combine(_env.ContentRootPath, "Data", "Items.txt")).Split('\n').ToList()
-            };
-            model.Items = model.Items.Select(item => item.Trim()).ToList();
-            model.Items.Shuffle();
-            return View(model);
+                var model = new IndexModel
+                {
+                    Items = System.IO.File.ReadAllText(Path.Combine(_env.ContentRootPath, "Data", "Items.txt")).Split('\n').ToList()
+                };
+                model.Items = model.Items.Select(item => item.Trim()).ToList();
+                model.Items.Shuffle();
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error in Index");
+                throw;
+            }
         }
 
         public IActionResult Yes()
